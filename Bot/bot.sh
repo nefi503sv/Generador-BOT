@@ -46,7 +46,7 @@ tittle () {
 [[ -z $1 ]] && rt='adm-lite' || rt='ADMcgh'
     clear&&clear
     msg -bar
-    echo -e "\033[1;44;44m   \033[1;33m=====>>►► 🐲 ChumoGH 💥 Plus 🐲 ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
+    echo -e "\033[1;44;44m   \033[1;33m=====>>►► 🐲 DARKGH 💥 PRO 🐲 ◄◄<<=====  \033[0m \033[0;33m[$(less /etc/${rt}/v-local.log)]"
     msg -bar
 }
 in_opcion(){
@@ -256,7 +256,7 @@ permited=$(curl -sSL "$(ofus $keybot)/ChumoGH/VPSbot/main/TeleBotGen/Control/Con
   echo -e "\n\n\n\e[32m====================================================="
   echo -e "\e[32m  LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!"
   echo -e "   Mediante $link Autorida por @ChumoGH"
-  echo -e "      SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
+  echo -e "      SI DESEAS USAR EL BOTGEN CONTACTE A @Nefi746"
   echo -e "\e[32m=====================================================\n\n\n\e[0m"
   [[ -e /usr/bin/downBase ]] || echo 'https://www.dropbox.com/s/yqhjmr7o3342viv/lista' > /usr/bin/downBase && chmod 777 /usr/bin/downBase
   v1=$(curl -sSL "https://www.dropbox.com/s/blxo0jifysvyrey/v-new.log")
