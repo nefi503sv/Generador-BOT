@@ -138,7 +138,7 @@ upimg_fun () {
 invalido_fun () {
 MSG_id=$((${message_message_id} + 1 ))
 	[[ ! -z ${callback_query_message_chat_id[$id]} ]] && var=${callback_query_message_chat_id[$id]} || var=${message_chat_id[$id]}
-	local bot_retorno="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  𝙰𝙳𝙼  🎊\n"
+	local bot_retorno="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  DARKGH 🎊 \n"
 		bot_retorno+="$LINE\n"
         bot_retorno+=" COMANDO NO PERMITIDO !!\n Quizas debes usar este /keygen \n O Posiblemente no estas Autorizado, clic aqui /prices o \n Contacta a $(cat < /etc/ADM-db/resell) y adquiere una subscripcion \n Toca aqui para ayuda /ayuda \n"
         bot_retorno+="$LINE\n"
@@ -164,7 +164,7 @@ send_admin(){
 
 	bot_retorno="$LINE\n"
 	bot_retorno+="     🔰 Bot generador de key 🔰\n"
-	bot_retorno+="           ⚜ by @ChumoGH ⚜\n"
+	bot_retorno+="           ⚜ by @Nefi746 ⚜\n"
 	bot_retorno+="$LINE\n"
 	bot_retorno+="      ✅ ID enviado al admin ✅\n"
 	bot_retorno+="$LINE"
