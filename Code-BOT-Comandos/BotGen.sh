@@ -31,7 +31,6 @@ source ${SRC}/gerar_key
 source ${SRC}/power
 source ${SRC}/comandos
 source ${SRC}/update
-source ${SRC}/donar
 source ${SRC}/costes
 #source ${SRC}/kill_drop.sh
 
@@ -138,7 +137,7 @@ upimg_fun () {
 invalido_fun () {
 MSG_id=$((${message_message_id} + 1 ))
 	[[ ! -z ${callback_query_message_chat_id[$id]} ]] && var=${callback_query_message_chat_id[$id]} || var=${message_chat_id[$id]}
-	local bot_retorno="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  𝙰𝙳𝙼  🎊\n"
+	local bot_retorno="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  DARKGH  🎊\n"
 		bot_retorno+="$LINE\n"
         bot_retorno+=" COMANDO NO PERMITIDO !!\n Quizas debes usar este /keygen \n O Posiblemente no estas Autorizado, clic aqui /prices o \n Contacta a $(cat < /etc/ADM-db/resell) y adquiere una subscripcion \n Toca aqui para ayuda /ayuda \n"
         bot_retorno+="$LINE\n"
@@ -164,7 +163,7 @@ send_admin(){
 
 	bot_retorno="$LINE\n"
 	bot_retorno+="     🔰 Bot generador de key 🔰\n"
-	bot_retorno+="           ⚜ by @ChumoGH ⚜\n"
+	bot_retorno+="           ⚜ by @Nefi746 ⚜\n"
 	bot_retorno+="$LINE\n"
 	bot_retorno+="      ✅ ID enviado al admin ✅\n"
 	bot_retorno+="$LINE"
@@ -263,14 +262,7 @@ ShellBot.InlineKeyboardButton --button 'botao_conf' --line 2 --text 'MENU' --cal
 ShellBot.InlineKeyboardButton --button 'botao_conf' --line 3 --text '🔑 GEN KEY 🔑' --callback_data '/keygen'
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 1 --text '🔑 GEN KEY 🔑' --callback_data '/keygen'
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' 🧿 Ban|IP 📲' --callback_data '/banIP' # '1' --url "https://t.me/$(cat < /etc/ADM-db/resell)"
-ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' 🛒 CATALOGO 📝 ' --callback_data  '1' --url "$(cat < /etc/urlCT)"
-ShellBot.InlineKeyboardButton --button 'botao_user' --line 3 --text '💰 DONAR 💰' --callback_data  '1' --url "$(cat < /etc/urlDN)"
-ShellBot.InlineKeyboardButton --button 'botao_user' --line 3 --text ' 🪀 WTS 📲' --callback_data  '1' --url "https://wa.me/$(cat < /etc/numctc)"
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 3 --text ' MENU ' --callback_data '/menu'
-
-#ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' Contacto 📲' --callback_data  '1' --url 'https://wa.me/593987072611?text=Hola!,%20ℂ𝕙𝕦𝕞𝕠𝔾ℍ%20Me%20interesa%20Conocer%20más%20sobre%20el%20ADM.'
-ShellBot.InlineKeyboardButton --button 'botao_donar' --line 2 --text 'Donar Paypal' --callback_data '1' --url "$(cat < /etc/urlDN)"
-ShellBot.InlineKeyboardButton --button 'botao_donar' --line 2 --text 'ACCEDER WHATSAPP' --callback_data '1' --url "https://wa.me/$(cat < /etc/numctc)"
 
 # Ejecutando escucha del bot
 while true; do
